@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>pagina grado 11</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="menu-icono" onclick="toggleMenu()">☰</div>
+
+    <div class="menu" id="menu">
+        <div class="menu-header">
+            <span onclick="volverInicio()">⬅ Volver</span>
+        </div>
+        <a href="#">Inicio</a>
+        <a href="#">Buscar</a>
+        <a href="#" onclick="cambiarModo()">🌙 / ☀ Modo</a>
+    </div>
+
+    <header class="header">
+        <img src="logo.png" class="logo">
+        <h2>pagina grado 11</h2>
+    </header>
+
+    <div class="buscar">
+        <input type="text" placeholder="Buscar..." id="buscarInput">
+    </div>
+
+    <div class="busquedas-recientes" id="busquedasRecientes"></div>
+
+    <!-- FORM PUBLICAR -->
+    <div class="form-publicar" id="formPublicar">
+        <textarea id="descripcionInput" placeholder="Escribe una descripción..."></textarea>
+        <input type="file" id="mediaFile" accept="image/*,video/*">
+        <button onclick="publicarContenido()">Publicar</button>
+    </div>
+
+    <div class="feed" id="feed"></div>
+
+    <div class="boton-publicar" onclick="mostrarFormulario()">+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

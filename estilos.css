@@ -1,0 +1,212 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #fafafa;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* MENU */
+.menu-icono {
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    left: -220px;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background: white;
+    transition: 0.3s;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu.active {
+    left: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    background: #eee;
+}
+
+.menu-header {
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* BUSCAR */
+.buscar {
+    padding: 10px;
+    background: white;
+}
+
+.buscar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+.busquedas-recientes {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* FORM PUBLICAR */
+.form-publicar {
+    display: none;
+    padding: 15px;
+    background: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.form-publicar textarea {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.form-publicar button {
+    padding: 8px 15px;
+    border: none;
+    background: #2196f3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* FEED */
+.feed {
+    max-width: 500px;
+    margin: auto;
+}
+
+.post {
+    background: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.post-img {
+    width: 100%;
+}
+
+.descripcion-post {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.post-actions {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.post-actions span {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.comentarios {
+    padding: 10px;
+}
+
+.comentarios input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+}
+
+.eliminar-btn {
+    color: red;
+    cursor: pointer;
+}
+
+/* BOTON + */
+.boton-publicar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    background: #2196f3;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* MODO OSCURO */
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark .post,
+body.dark .header,
+body.dark .buscar,
+body.dark .menu,
+body.dark .form-publicar,
+body.dark .busquedas-recientes {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark input,
+body.dark textarea {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+}
